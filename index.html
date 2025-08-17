@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frozen To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <div class="snowflakes"></div>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-snowflake"></i> Frozen To-Do List <i class="fas fa-snowflake"></i></h1>
+            <p>Let it go... of your unfinished tasks!</p>
+        </header>
+        
+        <div class="input-section">
+            <input type="text" id="task-input" placeholder="What do you want to build today, Olaf?">
+            <button id="add-btn"><i class="fas fa-plus-circle"></i> Add Magic</button>
+        </div>
+        
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all"><i class="fas fa-snowman"></i> All</button>
+            <button class="filter-btn" data-filter="active"><i class="fas fa-icicles"></i> Active</button>
+            <button class="filter-btn" data-filter="completed"><i class="fas fa-crown"></i> Completed</button>
+        </div>
+        
+        <ul id="task-list"></ul>
+        
+        <div class="stats">
+            <span id="tasks-left">0 tasks left to conquer</span>
+            <button id="clear-completed"><i class="fas fa-wind"></i> Melt Completed</button>
+        </div>
+    </div>
+
+    <div id="sparkle-container"></div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
